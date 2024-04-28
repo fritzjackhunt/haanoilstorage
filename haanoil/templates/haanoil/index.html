@@ -1,53 +1,7 @@
+{% extends 'haanoil/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haan Oil Storage</title>
-
-    <!-- Bootsrap 5 CSS Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-
-    <!-- Template Main CSS File -->
-    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
-</head>
-<body>
-    
-    <!--Navbar Section STARTS-->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
-              </li>   
-              <li class="nav-item">
-                <a class="nav-link" href="#">OUR SERVICES</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#">TERMINALS</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#">TANK STORAGE</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT US</a>
-              </li> 
-            </ul> 
-          </div>
-        </div>
-    </nav>
-    <!--Navbar Section ENDS-->
+{% block content %}
 
     <div class="container-fluid" id="jumbotron">
         
@@ -67,23 +21,238 @@
             </div>   
           </div>
 
-          <div class="col-6 d-flex justify-content-center">
+          <div class="col-6 pcs-10">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12">
                     <img src="{% static 'pictures/map.webp' %}" id="rotate" class="d-block" alt="...">
+                    <br>
                 </div>
-                <div class="col-6">
-                    <p>hello</p>
+               
+                <div class="col-8 text-center rotate-text">
+                    <p>Haan Oil Storage are located in the Heart
+                      of Port of Houston & Rotterdam</p>
                 </div>
             </div>
-            
-            
           </div>
         </div>
     </div>
 
+    <!--Header text section ENDS-->
 
-    <!-- Bootsrap 5 JS Link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
-</html>
+    <!--Sub-header text section STARTS-->
+
+    <div class="container-fluid" id="sub-header">
+      <div class="row">
+        <div class="col-12 px-5 py-5">
+          <p class="px-5 py-5">
+            Haan Oil Storage stands at the forefront of the crude oil transportation and tank storage logistics industry, renowned for its unparalleled services and cutting-edge facilities. As a respected independent operator of tank terminals for oils, gases, and chemicals on a global scale, the company has established an unmatched reputation for its extraordinary efficiency and unwavering reliability, setting new standards in the business.</p>
+        </div>
+      </div>
+    </div>
+    <!--Sub-header text section ENDS-->
+
+    <!--Visionary section STARTS-->
+
+    <div class="container" id="visionary">
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <h4>Visionary Pursuits</h4>
+          <span>Who We Are & Our Mission</span>
+        </div>
+
+        <div class="col-4">
+
+          <i class="fa-solid fa-building"></i>
+
+          <br>
+
+          <h5 class="text-center">WHO WE ARE</h5>
+
+          <br>
+
+          <p>As a prominent player in the industry, we are proud to offer top-tier tank storage and transportation services in both the US and Europe</p>
+
+          <p>Our extensive experience in transshipping oil and gas products has made us a trusted name in the field.</p>
+
+          <p>Our tanks and partner vessels are maintained by a team of highly trained professionals, ensuring the highest standards of safety, reliability and efficiency are maintained.</p>
+        </div>
+
+        <div class="col-4">
+
+          <i class="fa-solid fa-map-location-dot"></i>
+
+          <br>
+
+          <h5 class="text-center">OUR MISSION</h5>
+
+          <br>
+
+          <p>Our mission is to support environmentally friendly transport and storage of products that contribute to the sustainable growth of our partners' economies.</p>
+
+          <p>We are committed to finding new opportunities and innovative solutions that align with our values and goals.</p>
+
+          <p>By striving to build positive relationships and maintaining alliances with our partners, we remain committed to creating a more sustainable and responsible future. </p>
+        </div>
+
+        <div class="col-4">
+
+          <i class="fa-solid fa-arrow-up-right-dots"></i>
+
+          <br>
+
+          <h5 class="text-center">OUR VISSION</h5>
+
+          <br>
+
+          <p>Our vision is to become the foremost independent provider of oil and gas solutions and shipping services.</p>
+
+          <p>By delivering exceptional solutions that meet the needs of both local and international customers, we aim to establish ourselves as a reliable and trusted partner in the industry.</p>
+
+          <p>With a focus on innovation, efficiency, and sustainability, we are committed to driving growth and delivering value to our customers and stakeholders.</p>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <!--Visionary section ENDS-->
+
+    <!--About section STARTS-->
+
+    <div class="container-fluid" id="about">
+      <div class="row">
+        <div class="col-6" style="padding-top: 8%; padding-left: 60px; padding-right: 60px;">
+          <h4>About Us</h4>
+
+          <br>
+
+          <p>Haan Oil Storage stands as a pinnacle in the logistics industry, founded by seasoned experts in logistics and product storage, under the leadership of Justinas Valiunas. Our comprehensive services encompass maritime transportation, tank storage, and tailored logistics solutions. Committed to delivering unparalleled excellence, we have fostered enduring partnerships with numerous clients, who consistently choose us as their trusted logistics ally.</p>
+
+          <a href="#" class="btn btn-quote btn-warning" style="margin-right: 20px;" role="button">Learn More</a>  
+        </div>
+
+        <div class="col-6">
+          <img src="{% static 'pictures/about.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <!--About section ENDS-->
+
+    <!--Provided section STARTS-->
+
+    <div class="container" id="provided">
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <h4>Provided Services</h4>
+          <span>Covered In These Areas</span>
+        </div>
+
+
+        <div class="col-4">
+          <div class="card text-bg-dark border-light">
+            <img src="{% static 'pictures/warehouse.webp' %}"  class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Warehousing</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">We take safety and security seriously, and our facilities are equipped with the latest technology and security measures to ensure that products are stored securely and protected from unauthorized access. We also follow strict environmental regulations and take steps to minimize the impact of our operations on the environment.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card text-bg-dark border-light">
+            <img src="{% static 'pictures/sea.webp' %}"  class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Sea Fright</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Our company offers comprehensive petroleum freight services to meet the transportation needs of our clients in the petroleum industry. We specialize in the safe and efficient transportation of petroleum products, including crude oil, gasoline, diesel, and other refined products.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card text-bg-dark border-light">
+            <img src="{% static 'pictures/petroleum.webp' %}"  class="card-img" alt="...">
+            <div class="card-img-overlay" style="left: 50px;">
+              <h5 class="card-title">Petroleum Storage Tank</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">We offer a wide range of tank sizes and configurations to accommodate a variety of petroleum products, from crude oil to refined fuels such as gasoline, diesel, and jet fuel. Our tanks are made of high-quality materials that are durable</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!--Provided section ENDS-->
+
+
+
+    <!--Standards/Storage section STARTS-->
+
+    <div class="container" id="standards">
+      <div class="row">
+        <div class="col-6 py-5 px-5">
+          <h4><i class="fa-solid fa-location-pin"></i> Our Standards</h4>
+
+          <p>Standardization is important for operational excellence. For this reason GSS Baltic Logistics has carefully recorded and analyzed its operational best practices around the world in order to develop 75 standards for global implementation.</p>
+
+          <br>
+
+          <p>These standards cover all aspects of a terminal's lifecycle in the fields of Safety, Health, Environment, Quality and Operations, as well as Technical and Project Management. These global standards, known as the Leading Way, are at the heart of GSS Baltic Logistics strategy and have been developed in close consultation with local technical and safety managers. We aims to bring about continuous improvement in every aspect of our operation.</p>
+          
+        </div>
+
+        <div class="col-6 py-5 px-5">
+          <h4><i class="fa-solid fa-location-pin"></i>  Storage Management</h4>
+
+          <p>We provide via our subsidiary Services tank leasing and terminal services.</p>
+
+          <br>
+
+          <p>Given the increase in the demand for oil and gas and the high rise call for oil storage facilities and warehousing, We thereby increase our input and output, manpower and storage capacities in order to remain one of the leaders in the oil and gas business and to meet the needs of our customers. Through years of experience, GSS Baltic Logistics Company has become a preferred storage and warehousing provider for various companies and customers.</p>
+          
+        </div>
+       
+      </div>
+    </div>
+
+    <!--Standards/Storage section ENDS-->
+
+    <!--Terminals section STARTS-->
+
+    <div class="container-fluid" id="terminals">
+      <div class="row">
+        <div class="col-6">
+          <img src="{% static 'pictures/terminals.webp' %}"  class="w-100" alt="...">
+        </div>
+        <div class="col-6 py-5">
+          <h4>Rotterdam Oil Storage Terminals</h4>
+
+          <hr>
+
+          <p>GSS Baltic Logistics operates highly sophisticated oil terminals strategically positioned in the commercial seaports of Houston and Rotterdam, serving as pivotal hubs in the realm of crude oil field logistics and storage. Our terminals are meticulously engineered, employing cutting-edge technology to ensure seamless intake of crude oil and oil products from rail tank cars, marine tankers, and pipelines.</p>
+
+          <p>Within each terminal, we have established our own advanced laboratory dedicated to the meticulous quality and quantity control of oil products. This rigorous testing process guarantees that every operation within our port, including bunkering and oil sites, is executed with precision and in strict adherence to the most stringent industry standards.</p>
+
+          <p>Our facilities feature storage tanks of varying capacities, meticulously designed to accommodate a diverse array of petroleum products, including Jet Fuel, Diesel Gasoil, and Ultra Low Sulfur. We have invested in advanced vapor generating capacity and a network of technological pipelines, facilitating swift and secure transportation of petroleum products between sites and tanks. This robust infrastructure enables us to efficiently deliver products to tankers and bunkering vessels, ensuring unparalleled reliability and efficiency.</p>
+
+          <p>Specializing in fuel oil and middle distillates, GSS Baltic Logistics boasts an impressive total capacity exceeding 418,000 cubic meters distributed across 18 meticulously maintained tanks. Our terminals handle a comprehensive range of products, including Diesel Gasoline, Naphtha, and Jet Fuel (K1, K2, and K3 categories).
+
+          In addition to our advanced infrastructure, operational excellence is the hallmark of our service. Our terminals feature deep drafts and direct connections to truck, rail, and pipeline systems, guaranteeing swift and reliable distribution channels. At GSS Baltic Logistics, we are dedicated to delivering unparalleled solutions in crude oil logistics and storage, setting new benchmarks for excellence, professionalism, and efficiency in the industry.</p>
+
+          <a href="#" class="btn btn-quote btn-warning" style="margin-right: 20px;" role="button">See details</a> 
+
+        </div>
+      </div>
+    </div>
+
+    <!--Terminals section ENDS-->
+
+    {% endblock %}
+
+    

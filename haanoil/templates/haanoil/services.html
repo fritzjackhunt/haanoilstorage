@@ -1,0 +1,66 @@
+{% extends 'haanoil/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--Jumbotron section STARTS-->
+<div class="container-fluid" id="service-page">
+    <div class="container">
+        <div class="row hero-2">
+            <div class="col-12" id="subheader-text">
+                <h5>Our Services</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Jumbotron section ENDS-->
+
+
+<!--Body section STARTS-->
+
+<div class="container" id="service-body">
+    <div class="row py-5 px-5">
+        <div class="col-6">
+            <h4><i class="fa-solid fa-location-pin"></i> Warehousing</h4>
+    
+            <p>GSS Baltic Logistics a wide range of high-value-add warehousing services to fit the specific requirements of even the most challenging products in terms of storage, handling, flows, regulatory compliances, safety and security. Whether your preference is for dedicated or shared-user facilities, GSS Baltic Logistics will identify the optimal footprint and design a configuration that best suits your supply chain. Our expansive warehouses have flexible capacity to receive and manage your goods, with racked and bulk storage, hanging, boxed and shelving solutions, cross-docking and more.</p>
+    
+            <p>Our cutting-edge IT systems provide you with end-to-end traceability of product flows for responsive inventory management and real-time decision-making.</p>
+        </div>
+        <div class="col-6">
+            <img src="{% static 'pictures/service.webp' %}" class="d-block " alt="...">
+        </div>
+
+
+        <div class="col-6" style="padding-top: 18%;">
+            <img src="{% static 'pictures/service1.webp' %}" class="d-block " alt="...">
+        </div>
+
+        <div class="col-6">
+            <h4><i class="fa-solid fa-location-pin"></i> Sea Fright</h4>
+    
+            <p>Sea transport provides safe and wide scale cargo deliveries on long distances within a wide geography of transportation, Sea Freight combining low level of transport costs and possibility to ship the different types of goods (general cargo, temperature-controlled and dangerous goods, oversized and heavy cargo etc.). Thanks to significant vessel capacity, sea transport is most expedient mode of transport for delivery of large quantities of goods in intercontinental transportation. We offer a full array of freight forwarding and global transportation services to meet the most demanding shipping requirements. Whatever the destination, we deliver your cargo on time at favorable rates - across borders, across continents and across the globe. We are not ship owners, but GSS Baltic Logistics team works closely with an extensive portfolio of global and local carriers to provide you the best solutions. Use our one-stop web-solution 24/7 to calculate sea freight rates, create shipments, track your freight and to access a full view of shipment details worldwide.</p>
+    
+            <p>To meet needs of clients we have established our Logistics department to provide one-stop solution for sea freight services from Asia (China, Hong Kong, Taiwan (R.O.C.) etc.), which enables us to offer speed and flexibility at favorable rates. We are constantly expanding our partnerships with global and local carriers to offer a full array of main and value-added service options worldwide.</p>
+        </div>
+
+
+        <div class="col-6">
+            <h4><i class="fa-solid fa-location-pin"></i> Special Cargo</h4>
+    
+            <p>Transporting Special Cargo requires the highest amount of expertise in the market. We gained this experience during decades of transporting all types of cargoes, including oversized / heavy, refrigerated and hazardous ones.</p>
+    
+            <p>GSS Baltic Logistics teams are in contact with our customers throughout the entire logistics procedure, starting from the designing process, making sure the manufactured part can be shipped on a container vessel, on through the planning and execution of the actual shipping process, until the cargo arrives safely at its destination. For each shipment, an array of experts - project managers, ship's crew, land transportation specialists, surveyors and more - team up to handle the job in the best possible way. Optimal treatment of your cargo is our top priority.</p>
+        </div>
+        <div class="col-6">
+            <img src="{% static 'pictures/service2.webp' %}" class="d-block " alt="...">
+        </div>
+        
+    </div>
+</div>
+
+<!--Body section ENDS-->
+
+
+
+{% endblock %}

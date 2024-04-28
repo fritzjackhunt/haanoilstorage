@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ax_(6)z6xo2^*)&2r3tux-s4t9%1dz3k0fq(u8n4s+=_ojy4z8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','.vercel.app','now.sh',]
+ALLOWED_HOSTS = ['127.0.0.1','localhost','.vercel.app','now.sh', 'www.haanoilstorage.com']
 
 
 # Application definition
@@ -79,11 +79,14 @@ WSGI_APPLICATION = 'haanoil.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'ZabAOGYSVAVOJWASMAMxkifsgbXFqclF',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '44686',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -129,3 +132,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Vercel Deployment
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+# Email Settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'Chrispishon@gmail.com'
+EMAIL_HOST_PASSWORD = 'jtfiwelvytwxsral'
+EMAIL_USE_TLS = True
